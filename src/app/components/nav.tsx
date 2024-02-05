@@ -36,11 +36,11 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <div
-            className={`flex flex-row gap-5 px-8 py-5 rounded-full items-center  ${
+            className={`flex flex-row gap-5 px-8 py-4 rounded-full items-center  ${
               isScrolled
                 ? "border-none bg-[#131313]/60 backdrop-blur-md"
                 : "border border-[#212121] bg-[#131313]"
-            } text-[#BBBBBB] font-clashGrotesk font-normal  text-xl`}
+            } text-[#BBBBBB] font-clashGrotesk font-normal text-xl`}
           >
             <p className="hover:text-white transition-colors cursor-pointer">
               Features
@@ -59,15 +59,19 @@ const Navbar = () => {
             </p>
           </div>
         </div>
-        <p className="text-white hidden md:block">Hi</p>
-        <div
-          className={`flex flex-row gap-5 px-7 py-4 rounded-full items-center  ${
-            isScrolled
-              ? "border border-[#868686] bg-[#131313]/60 backdrop-blur-md"
-              : "border border-[#212121] bg-[#131313]"
-          } text-[#BBBBBB] font-clashGrotesk font-normal  text-xl`}
-        >
-          <Menu className="h-8 w-8"/>
+        <button className="hidden md:block text-white bg-[#131313] px-5 rounded-full py-4 border border-[#212121] font-clashGrotesk text-xl">
+          Contact Me
+        </button>
+        <div className="md:hidden">
+          <div
+            className={`flex flex-row gap-5 px-7 py-4 rounded-full items-center  ${
+              isScrolled
+                ? "border border-[#868686] bg-[#131313]/60 backdrop-blur-md"
+                : "border border-[#212121] bg-[#131313]"
+            } text-[#BBBBBB] font-clashGrotesk font-normal  text-xl`}
+          >
+            <Menu className="h-8 w-8" />
+          </div>
         </div>
       </Wrapper>
     </div>
