@@ -11,6 +11,7 @@ import Preloader from "./components/preloader";
 import Slider from "./components/slider";
 import SliderTransparent from "./components/slider_transparent";
 import Clients from "./components/clients";
+import Work from "./components/works";
 
 export default function Home() {
   useEffect(() => {
@@ -33,6 +34,7 @@ export default function Home() {
       <SliderTransparent />
       <Clients />
       <About />
+      <Work />
       <FAQ />
       <Footer />
     </main>

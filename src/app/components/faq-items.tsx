@@ -46,7 +46,7 @@ const Question = ({ question, answer }: QuestionType) => {
   return (
     <motion.div
       animate={open ? "open" : "closed"}
-      className={`rounded-2xl border-[1px] border-[#0D0D0D] px-8 transition-colors ${
+      className={`rounded-2xl border-[1px] border-[#0D0D0D] mx-4 md:mx-0 px-5 md:px-8 transition-colors ${
         open ? "bg-[#161616]" : "bg-[#0D0D0D]"
       }`}
     >
@@ -55,13 +55,14 @@ const Question = ({ question, answer }: QuestionType) => {
         className="flex w-full items-center justify-between gap-4"
       >
         <span
-          className={`text-left pt-8 pb-2 text-3xl font-clashDisplay font-medium transition-colors ${
+          className={`text-left pt-6 md:pt-8 pb-2 text-2xl md:text-3xl font-clashDisplay font-medium transition-colors ${
             open ? "text-[#C4C4C4]" : "text-[#BBBBBB]"
           }`}
         >
           {question}
         </span>
         <motion.span
+          className="mt-3"
           variants={{
             open: {
               rotate: "45deg",
@@ -72,7 +73,7 @@ const Question = ({ question, answer }: QuestionType) => {
           }}
         >
           <FiPlus
-            className={`text-3xl transition-colors ${
+            className={`text-2xl md:text-3xl transition-colors ${
               open ? "text-[#C4C4C4]" : "text-[#BBBBBB]"
             }`}
           />
@@ -86,7 +87,7 @@ const Question = ({ question, answer }: QuestionType) => {
         }}
         className="overflow-hidden"
       >
-        <p className="text-[#7e7e7e] text-xl font-clashGrotesk pb-6">
+        <p className="text-[#7e7e7e] text-lg md:text-xl font-clashGrotesk pb-2 md:pb-6">
           {answer}
         </p>
       </motion.div>

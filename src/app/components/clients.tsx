@@ -3,13 +3,13 @@ import Marquee from "react-fast-marquee";
 
 const Clients = () => {
   return (
-    <div className="flex flex-col items-center w-full pt-20 pb-36">
-      <h4 className=" font-clashGrotesk font-normal text-2xl text-[#BBBBBB] mb-16">
+    <div className="flex flex-col items-center w-full pt-12 md:pt-20 pb-20 md:pb-36">
+      <h4 className=" font-clashGrotesk font-normal text-xl md:text-2xl text-[#BBBBBB] mb-12 md:mb-16 text-center">
         Already chosen by great brands and companies
       </h4>
-      <Marquee autoFill>
-        <div className="flex flex-row w-full gap-32 items-center">
-          <div className="h-[40px] w-[225px] relative ml-32">
+      <Marquee className=" overflow-y-hidden" autoFill>
+        <div className="flex flex-row w-full gap-20 md:gap-32 items-center">
+          <div className="h-[40px] w-[225px] relative ml-20 md:ml-32">
             <Image
               fill
               src="/clients/vox.png"

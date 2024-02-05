@@ -11,8 +11,8 @@ const About = () => {
             ABOUT ME
           </p>
         </div>
-        <div className="flex flex-col w-[65%] items-center mt-4">
-          <h2 className=" font-clashDisplay font-medium text-white text-5xl text-center">
+        <div className="flex flex-col w-full md:w-[65%] items-center mt-4">
+          <h2 className=" font-clashDisplay font-medium text-white text-4xl md:text-5xl text-center">
             We know what&apos;s going on.
             <span className="text-white/25">
               {" "}
