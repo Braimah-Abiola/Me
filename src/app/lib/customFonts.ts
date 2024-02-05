@@ -5,4 +5,9 @@ const clashGrotesk = localFont({
   variable: "--font-clashGrotesk",
 });
 
-export { clashGrotesk };
+const clashDisplay = localFont({
+  src: [{ path: "../../../assets/fonts/clash-display.ttf" }],
+  variable: "--font-clashDisplay",
+});
+
+export { clashGrotesk, clashDisplay };

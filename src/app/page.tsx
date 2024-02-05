@@ -1,8 +1,16 @@
 "use client";
 
 import { AnimatePresence } from "framer-motion";
-import Preloader from "./components/preloader";
 import { useEffect, useState } from "react";
+import About from "./components/about";
+import FAQ from "./components/faq";
+import Footer from "./components/footer";
+import Hero from "./components/hero";
+import Navbar from "./components/nav";
+import Preloader from "./components/preloader";
+import Slider from "./components/slider";
+import SliderTransparent from "./components/slider_transparent";
+import Clients from "./components/clients";
 
 export default function Home() {
   useEffect(() => {
@@ -17,8 +25,16 @@ export default function Home() {
   return (
     <main>
       <AnimatePresence mode="wait">
-        {isLoading && <Preloader/>}
+        {isLoading && <Preloader />}
       </AnimatePresence>
+      <Navbar />
+      <Hero />
+      <Slider />
+      <SliderTransparent />
+      <Clients />
+      <About />
+      <FAQ />
+      <Footer />
     </main>
   );
 }

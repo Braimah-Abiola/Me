@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       clashGrotesk: ["var(--font-clashGrotesk)"],
+      clashDisplay: ["var(--font-clashDisplay)"],
     },
     extend: {
       backgroundImage: {

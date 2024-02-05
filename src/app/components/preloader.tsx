@@ -56,7 +56,9 @@ const Preloader = () => {
           <Wrapper className="flex flex-col h-dvh justify-center items-center">
             <div></div>
             <div className="w-full flex flex-col items-center z-[50]">
-              <p className="uppercase font-black text-white text-8xl font-clashGrotesk">{counter}%</p>
+              <p className="uppercase font-black text-white text-[7.5rem] font-clashDisplay">
+                {counter}%
+              </p>
             </div>
           </Wrapper>
           <svg>
