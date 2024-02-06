@@ -25,7 +25,7 @@ const ProjectItem: React.FC<ProjectItemInterface> = ({ src, projectTitle }) => {
       >
         <Image
           quality={100}
-          className="rounded-[20px] object-cover object-left-top"
+          className="rounded-[20px] object-cover md:object-top"
           fill
           src={src}
           alt="Pclub.io"

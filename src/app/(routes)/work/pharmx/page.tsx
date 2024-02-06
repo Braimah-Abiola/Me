@@ -7,26 +7,29 @@ import Quote from "@/app/components/svg/quote";
 import Wrapper from "@/app/wrapper/wrapper";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
-const LiftInfluence = () => {
+const PharmX = () => {
   return (
     <div className="w-full flex flex-col pt-32 md:pt-40">
       <Wrapper>
         <h1 className="text-white text-6xl lg:text-9xl font-clashDisplay font-medium">
-          LiftInfluence<span className="text-[#00C2FF]">*</span>
+          PharmX<span className="text-[#00C2FF]">*</span>
         </h1>
         <div className="w-full flex flex-col md:justify-end md:items-end mt-3 md:mt-12">
           <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl">
-            Artificial Intelligence powered social media growth tool Unlock the
-            power of AI for social media engaement and following.
+            PharmX is a revolutionary platform that helps future healthcare
+            professionals to learn, implement and retain knowledge The aim is to
+            produce high-quality questions and medical scenarios for healthcare
+            professionals.
           </p>
         </div>
       </Wrapper>
       <div className="relative w-full h-[50vh] md:h-screen mt-20 mb-20">
         <Image
           fill
-          src="/gallery/liftinfluence_showcase.png"
-          alt="LiftInfluence"
+          src="/gallery/pharmx.webp"
+          alt="PharmX"
           quality={100}
           className="object-cover object-left md:object-center"
         />
@@ -39,7 +42,7 @@ const LiftInfluence = () => {
                 CLIENT
               </h4>
               <p className="text-white font-clashGrotesk text-xl md:text-2xl font-medium">
-                LiftInflunce
+                Pharm X
               </p>
             </div>
             <div className="flex flex-col gap-2.5 md:gap-4">
@@ -47,7 +50,7 @@ const LiftInfluence = () => {
                 SERVICE
               </h4>
               <p className="text-white font-clashGrotesk text-xl md:text-2xl font-medium">
-                Design + Development
+                Design
               </p>
             </div>
             <div className="flex flex-col gap-2.5 md:gap-4">
@@ -55,7 +58,7 @@ const LiftInfluence = () => {
                 YEAR
               </h4>
               <p className="text-white font-clashGrotesk text-xl md:text-2xl font-medium">
-                2023
+                2022
               </p>
             </div>
             <div className="flex flex-col gap-2.5 md:gap-4">
@@ -63,35 +66,53 @@ const LiftInfluence = () => {
                 LOCATION
               </h4>
               <p className="text-white font-clashGrotesk text-xl md:text-2xl font-medium">
-                Slovenia
+                United Kingdom
               </p>
             </div>
             <div>
-              <button
-                className={`flex flex-row items-center gap-4 md:gap-0 px-5 rounded-full py-4 bg-[#00C2FF] font-clashGrotesk font-normal text-lg md:text-xl
-        `}
+              <Link
+                target="_blank "
+                href="https://play.google.com/store/apps/details?id=com.bhyte.midas&pcampaignid=web_share"
               >
-                View{" "}
-                <span className="hidden md:block ml-1 mr-4">live project</span>{" "}
-                <ArrowUpRight />
-              </button>
+                <button
+                  className={`flex flex-row items-center gap-4 md:gap-0 px-5 rounded-full py-4 bg-[#00C2FF] font-clashGrotesk font-normal text-lg md:text-xl
+        `}
+                >
+                  View{" "}
+                  <span className="hidden md:block ml-1 mr-4">
+                    live project
+                  </span>{" "}
+                  <ArrowUpRight />
+                </button>
+              </Link>
             </div>
           </div>
 
           <div className="w-full flex flex-col md:flex-row md:justify-between items-start py-20 mt-10 md:mt-32">
-            <h2 className="text-white text-4xl lg:text-6xl font-clashDisplay font-medium">
-              Overview<span className="text-[#00C2FF]"> ●</span>
-            </h2>
-            <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
-              Embark on a cosmic journey with &apos;Abstract Pulse,&apos; where
-              innovation converges with the cosmic canvas in &apos;Nebula
-              Infusion.&apos; Our meticulous commitment to authenticity shapes
-              every detail, creating a vibrant visual experience in hues of blue
-              and violet. Delving into the project, our deliberate use of square
-              and cube shapes adds a captivating dimension to the visual
-              narrative, establishing a distinct language that echoes
-              throughout.
-            </p>
+            <div className=" w-full">
+              <h2 className="text-white text-4xl lg:text-6xl font-clashDisplay font-medium">
+                Overview<span className="text-[#00C2FF]"> ●</span>
+              </h2>
+            </div>
+            <div className="w-full flex flex-col">
+              <p className=" font-clashGrotesk font-normal text-start w-full text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
+                PharmX is a platform that enables healthcare professionals to
+                learn, implement and retain knowledge. The platform provides
+                high-quality exam questions and medical scenarios to prepare
+                users for life as qualified practitioners. It covers a wide
+                range of topics, including cardiovascular, respiratory, nervous,
+                immune and musculoskeletal systems, malignant diseases, pharmacy
+                law, OTC scenarios and more.
+              </p>
+              <p className=" font-clashGrotesk font-normal text-start w-full text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-4">
+                The app is updated on a weekly basis with new exam questions to
+                ensure that our users have access to up-to-date and relevant
+                content. We believe that our platform will help educate future
+                healthcare professionals, making it perfect for pharmacy
+                students, medical students, junior doctors, pharmacists,
+                doctors, and independent prescribers.
+              </p>
+            </div>
           </div>
 
           <div className="w-full flex flex-col md:flex-row md:justify-between gap-8 md:gap-10 items-start md:py-20 mt-0 md:mt-20">
@@ -99,7 +120,7 @@ const LiftInfluence = () => {
               <Image
                 quality={100}
                 fill
-                src="/gallery/liftinfluence.png"
+                src="/gallery/pharmx2.webp"
                 alt="LiftInfluence"
                 className=" object-cover object-left md:object-center rounded-3xl"
               />
@@ -108,7 +129,7 @@ const LiftInfluence = () => {
               <Image
                 quality={100}
                 fill
-                src="/gallery/liftinfluence.png"
+                src="/gallery/pharmx3.webp"
                 alt="LiftInfluence"
                 className=" object-cover object-left md:object-center rounded-3xl"
               />
@@ -120,14 +141,13 @@ const LiftInfluence = () => {
               Challenge<span className="text-[#00C2FF]"> ●</span>
             </h2>
             <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
-              Embark on a cosmic journey with &apos;Abstract Pulse,&apos; where
-              innovation converges with the cosmic canvas in &apos;Nebula
-              Infusion.&apos; Our meticulous commitment to authenticity shapes
-              every detail, creating a vibrant visual experience in hues of blue
-              and violet. Delving into the project, our deliberate use of square
-              and cube shapes adds a captivating dimension to the visual
-              narrative, establishing a distinct language that echoes
-              throughout.
+              The challenge was implementing comprehensive security measures for
+              Midas, encompassing encryption, multi-factor authentication,
+              secure communication protocols, data minimization, regular audits,
+              fraud detection, regulatory compliance, backend infrastructure
+              security, employee training, and incident response planning, to
+              safeguard sensitive user data and foster trust, confidence, and
+              loyalty among users.
             </p>
           </div>
 
@@ -136,22 +156,18 @@ const LiftInfluence = () => {
               Result<span className="text-[#00C2FF]"> ●</span>
             </h2>
             <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
-              Embark on a cosmic journey with &apos;Abstract Pulse,&apos; where
-              innovation converges with the cosmic canvas in &apos;Nebula
-              Infusion.&apos; Our meticulous commitment to authenticity shapes
-              every detail, creating a vibrant visual experience in hues of blue
-              and violet. Delving into the project, our deliberate use of square
-              and cube shapes adds a captivating dimension to the visual
-              narrative, establishing a distinct language that echoes
-              throughout.
+              I worked closely with Midas to create a brand identity, UI/UX
+              design, and mobile app that would meet the needs of their target
+              audience. I was committed to delivering exceptional design and
+              development services that help my client succeed.
             </p>
           </div>
 
           <div className="relative w-full h-[50vh] md:h-screen mt-20 md:mt-28 mb-20">
             <Image
               fill
-              src="/gallery/liftinfluence2.png"
-              alt="LiftInfluence"
+              src="/gallery/pharmx4.webp"
+              alt="PharmX"
               quality={100}
               className="object-cover object-left md:object-center rounded-3xl"
             />
@@ -165,10 +181,10 @@ const LiftInfluence = () => {
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="text-white text-3xl font-clashGrotesk font-normal">
-                    Niko Valdez
+                    Duke Opoku-Amankwa
                   </p>
                   <p className="text-white/60 font-clashGrotesk text-xl">
-                    Founder & Owner, LiftInfluence
+                    CEO, Midas Financial Inc.
                   </p>
                 </div>
               </div>
@@ -199,8 +215,8 @@ const LiftInfluence = () => {
             <span className=" cursor-pointer hover:text-[#00C2FF]">●</span>
           </h2>
           <div className="w-full flex flex-col lg:flex-row gap-10 mt-10 lg:mt-20">
-            <ProjectItem src="/gallery/midas.webp" projectTitle="Midas" />
-            <ProjectItem src="/gallery/pharmx.webp" projectTitle="PharmX" />
+            <ProjectItem src="/gallery/1.png" projectTitle="VOX-AI" />
+            <ProjectItem src="/gallery/2.png" projectTitle="Nova" />
           </div>
         </Wrapper>
       </div>
@@ -209,4 +225,4 @@ const LiftInfluence = () => {
   );
 };
 
-export default LiftInfluence;
+export default PharmX;

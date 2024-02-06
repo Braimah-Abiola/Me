@@ -22,8 +22,8 @@ const Work = () => {
           <span className=" cursor-pointer hover:text-[#00C2FF]">●</span>
         </h2>
         <div className="w-full flex flex-col lg:flex-row gap-10 mt-10 lg:mt-20">
-          <ProjectItem src="/gallery/1.png" projectTitle="VOX-AI" />
-          <ProjectItem src="/gallery/2.png" projectTitle="Nova" />
+          <ProjectItem src="/gallery/midas.webp" projectTitle="Midas" />
+          <ProjectItem src="/gallery/pharmx.webp" projectTitle="PharmX" />
         </div>
         <div className="w-full mt-10 md:mt-12">
           <ProjectItemLarge
@@ -32,11 +32,8 @@ const Work = () => {
           />
         </div>
         <div className="w-full flex flex-col mt-10 md:mt-12 lg:flex-row gap-10">
-          <ProjectItemTall
-            src="/gallery/1.png"
-            projectTitle="Gen Y Solutions"
-          />
-          <ProjectItem src="/gallery/2.png" projectTitle="Neni" />
+          <ProjectItemTall src="/gallery/nova.png" projectTitle="Nova" />
+          <ProjectItem src="/gallery/oownee2.webp" projectTitle="Oownee" />
         </div>
       </Wrapper>
     </div>
