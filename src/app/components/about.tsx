@@ -3,7 +3,7 @@ import Bullet from "./svg/bullet";
 
 const About = () => {
   return (
-    <div className="flex flex-col w-full py-20">
+    <div className="flex flex-col w-full py-20" id="about">
       <Wrapper className="flex flex-col items-center w-full">
         <div className="flex flex-row items-center gap-4">
           <Bullet />

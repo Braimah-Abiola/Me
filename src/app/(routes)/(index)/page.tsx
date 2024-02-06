@@ -2,16 +2,16 @@
 
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
-import About from "./components/about";
-import FAQ from "./components/faq";
-import Footer from "./components/footer";
-import Hero from "./components/hero";
-import Navbar from "./components/nav";
-import Preloader from "./components/preloader";
-import Slider from "./components/slider";
-import SliderTransparent from "./components/slider_transparent";
-import Clients from "./components/clients";
-import Work from "./components/works";
+import About from "../../components/about";
+import Clients from "../../components/clients";
+import FAQ from "../../components/faq";
+import Footer from "../../components/footer";
+import Hero from "../../components/hero";
+import Preloader from "../../components/preloader";
+import Slider from "../../components/slider";
+import SliderTransparent from "../../components/slider_transparent";
+import Work from "../../components/works";
+import Serivces from "@/app/components/services";
 
 export default function Home() {
   useEffect(() => {
@@ -28,12 +28,12 @@ export default function Home() {
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
-      <Navbar />
       <Hero />
       <Slider />
       <SliderTransparent />
       <Clients />
       <About />
+      <Serivces />
       <Work />
       <FAQ />
       <Footer />

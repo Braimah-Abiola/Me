@@ -55,8 +55,8 @@ const Question = ({ question, answer }: QuestionType) => {
         className="flex w-full items-center justify-between gap-4"
       >
         <span
-          className={`text-left pt-6 md:pt-8 pb-2 text-2xl md:text-3xl font-clashDisplay font-medium transition-colors ${
-            open ? "text-[#C4C4C4]" : "text-[#BBBBBB]"
+          className={`text-left pt-6 md:pt-8 pb-2 text-2xl md:text-3xl font-clashGrotesk font-normal transition-colors ${
+            open ? "text-[#C4C4C4]" : "text-[#cecece]"
           }`}
         >
           {question}
@@ -74,7 +74,7 @@ const Question = ({ question, answer }: QuestionType) => {
         >
           <FiPlus
             className={`text-2xl md:text-3xl transition-colors ${
-              open ? "text-[#C4C4C4]" : "text-[#BBBBBB]"
+              open ? "text-[#C4C4C4]" : "text-[#cecece]"
             }`}
           />
         </motion.span>

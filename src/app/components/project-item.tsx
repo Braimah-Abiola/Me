@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import SectionTitle from "./section-title";
+import Modal from "./project-modal";
 
 interface ProjectItemInterface {
   src: string;
@@ -8,9 +11,18 @@ interface ProjectItemInterface {
 }
 
 const ProjectItem: React.FC<ProjectItemInterface> = ({ src, projectTitle }) => {
+  const [modal, setModal] = useState({ active: false });
   return (
     <div className="flex flex-col w-full items-start">
-      <div className="relative w-full h-[350px] lg:h-[650px]">
+      <div
+        onMouseEnter={() => {
+          setModal({ active: true });
+        }}
+        onMouseLeave={() => {
+          setModal({ active: false });
+        }}
+        className="relative w-full h-[350px] lg:h-[650px] cursor-none"
+      >
         <Image
           quality={100}
           className="rounded-[20px] object-cover object-left-top"
@@ -26,6 +38,7 @@ const ProjectItem: React.FC<ProjectItemInterface> = ({ src, projectTitle }) => {
       <h2 className="font-clashDisplay text-4xl lg:text-6xl text-white font-medium mt-6 md:mt-8">
         {projectTitle}
       </h2>
+      <Modal modal={modal} />
     </div>
   );
 };

@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import SectionTitle from "./section-title";
-import React from "react";
+import React, { useState } from "react";
+import Modal from "./project-modal";
 
 interface ProjectItemTallInterface {
   src: string;
@@ -11,9 +14,18 @@ const ProjectItemTall: React.FC<ProjectItemTallInterface> = ({
   src,
   projectTitle,
 }) => {
+  const [modal, setModal] = useState({ active: false });
   return (
     <div className="flex flex-col w-full items-start">
-      <div className="relative w-full h-[600px] lg:h-[950px]">
+      <div
+        onMouseEnter={() => {
+          setModal({ active: true });
+        }}
+        onMouseLeave={() => {
+          setModal({ active: false });
+        }}
+        className="relative w-full h-[600px] lg:h-[950px] cursor-none"
+      >
         <Image
           quality={100}
           className="rounded-[20px] object-cover object-left lg:object-left-top"
@@ -35,14 +47,12 @@ const ProjectItemTall: React.FC<ProjectItemTallInterface> = ({
             <SectionTitle text="Branding" />
             <SectionTitle text="Development" />
           </div>
-          <div className="mt-3">
-            <SectionTitle text="UX" />
-          </div>
         </div>
       </div>
       <h2 className=" font-clashDisplay text-4xl lg:text-6xl text-white font-medium mt-6 md:mt-8">
         {projectTitle}
       </h2>
+      <Modal modal={modal} />
     </div>
   );
 };
