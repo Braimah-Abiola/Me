@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import Footer from "@/app/components/footer";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -185,11 +186,13 @@ const Contact = () => {
                 Let&apos;s chat!
               </p>
             </div>
-            <div className="mt-8 md:mt-0 p-10 md:p-10 aspect-square flex items-center justify-center bg-[#ffffff] rounded-full cursor-pointer">
-              <p className=" font-clashDisplay text-xl md:text-2xl font-medium uppercase text-center">
-                Schedule <br className="md:hidden" />a Call
-              </p>
-            </div>
+            <Link target="_blank" href="https://calendly.com/aretecodes/30min">
+              <div className="mt-8 md:mt-0 p-10 md:p-10 aspect-square flex items-center justify-center bg-[#ffffff] rounded-full cursor-pointer">
+                <p className=" font-clashDisplay text-xl md:text-2xl font-medium uppercase text-center">
+                  Schedule <br className="md:hidden" />a Call
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </Wrapper>
