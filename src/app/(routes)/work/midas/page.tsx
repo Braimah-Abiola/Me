@@ -49,7 +49,7 @@ const Midas = () => {
                 SERVICE
               </h4>
               <p className="text-white font-clashGrotesk text-xl md:text-2xl font-medium">
-                Design + Mobile App
+                App Design
               </p>
             </div>
             <div className="flex flex-col gap-2.5 md:gap-4">
@@ -154,9 +154,9 @@ const Midas = () => {
             </h2>
             <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
               I worked closely with Midas to create a brand identity, UI/UX
-              design, and mobile app that would meet the needs of their target
-              audience. I was committed to delivering exceptional design and
-              development services that help my client succeed.
+              design, and mobile app that met the needs of the target audience.
+              I was committed to delivering exceptional design and development
+              services that help boost retention of users.
             </p>
           </div>
 
@@ -174,7 +174,12 @@ const Midas = () => {
             <div className="w-full md:w-1/2">
               <div className="flex flex-row gap-4 md:gap-6 items-center">
                 <div className="relative h-[70px] w-[70px]">
-                  <Image fill src="/people/niko.png" alt="Niko Valdez" />
+                  <Image
+                    fill
+                    src="/people/duke.png"
+                    alt="Duke Opoku-Amankwa"
+                    quality={100}
+                  />
                 </div>
                 <div className="flex flex-col gap-1">
                   <p className="text-white text-3xl font-clashGrotesk font-normal">
@@ -191,9 +196,10 @@ const Midas = () => {
                 <Quote />
               </div>
               <h3 className="text-white font-clashDisplay text-5xl md:text-5xl font-medium">
-                A great guy that has some serious design skills! Very
-                straightforward and knows what is he doing. Would highly
-                recommend him!
+                I am absolutely thrilled with the exceptional UX design services
+                provided for my mobile app. Abiola&apos;s talent and dedication
+                resulted in a great user experience. He transformed my vision
+                into a visually stunning and intuitively designed app.
               </h3>
             </div>
           </div>
@@ -212,8 +218,16 @@ const Midas = () => {
             <span className=" cursor-pointer hover:text-[#00C2FF]">●</span>
           </h2>
           <div className="w-full flex flex-col lg:flex-row gap-10 mt-10 lg:mt-20">
-            <ProjectItem src="/gallery/1.png" projectTitle="VOX-AI" />
-            <ProjectItem src="/gallery/2.png" projectTitle="Nova" />
+            <ProjectItem
+              link="/work/pharmx"
+              src="/gallery/pharmx.webp"
+              projectTitle="PharmX"
+            />
+            <ProjectItem
+              link="/work/liftinfluence"
+              src="/gallery/liftinfluence_showcase.png"
+              projectTitle="LiftInfluence"
+            />
           </div>
         </Wrapper>
       </div>

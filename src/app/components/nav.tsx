@@ -46,38 +46,40 @@ const Navbar = () => {
                 : "border border-[#212121] bg-[#131313]"
             } text-[#BBBBBB] font-clashGrotesk font-normal text-xl`}
           >
-            <Link href="#about">
+            <Link href="/#about">
               <p className="hover:text-white transition-colors cursor-pointer">
                 About
               </p>
             </Link>
-            <Link href="#services">
+            <Link href="/#services">
               <p className="hover:text-white transition-colors cursor-pointer">
                 Services
               </p>
             </Link>
-            <Link href="#works">
+            <Link href="/#works">
               <p className="hover:text-white transition-colors cursor-pointer">
                 Works
               </p>
             </Link>
-            <Link href="#faqs">
+            <Link href="/#faqs">
               <p className="hover:text-white transition-colors cursor-pointer">
                 FAQs
               </p>
             </Link>
           </div>
         </div>
-        <button
-          className={`hidden md:block px-5 rounded-full py-4 border font-clashGrotesk text-xl ${
-            isScrolled
-              ? "border-[#656565] bg-[#131313]/60 backdrop-blur-md text-[#BBBBBB] hover:text-white transition-all duration-100"
-              : "border border-[#00C2FF] bg-[#00C2FF] text-[#0D0D0D]"
-          }  font-clashGrotesk font-normal text-xl
+        <Link href="/contact">
+          <button
+            className={`hidden md:block px-5 rounded-full py-4 border font-clashGrotesk text-xl ${
+              isScrolled
+                ? "border-[#656565] bg-[#131313]/60 backdrop-blur-md text-[#BBBBBB] hover:text-white transition-all duration-100"
+                : "border border-[#00C2FF] bg-[#00C2FF] text-[#0D0D0D]"
+            }  font-clashGrotesk font-normal text-xl
         `}
-        >
-          Contact Me
-        </button>
+          >
+            Contact Me
+          </button>
+        </Link>
         <div className="md:hidden">
           <div
             onClick={() => setToggle((prev) => !prev)}
@@ -100,22 +102,22 @@ const Navbar = () => {
           >
             <ul className="list-none flex-col justify-center w-full items-center flex gap-4">
               <li className=" hover:text-white transition-all">
-                <Link href="#about">
+                <Link href="/#about">
                   <p>About</p>
                 </Link>
               </li>
               <li className=" hover:text-white transition-all">
-                <Link href="#services">
+                <Link href="/#services">
                   <p>Services</p>
                 </Link>
               </li>
               <li className=" hover:text-white transition-all">
-                <Link href="#works">
+                <Link href="/#works">
                   <p>Works</p>
                 </Link>
               </li>
               <li className=" hover:text-white transition-all">
-                <Link href="#faqs">
+                <Link href="/#faqs">
                   <p>FAQs</p>
                 </Link>
               </li>

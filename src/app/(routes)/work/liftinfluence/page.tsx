@@ -79,19 +79,28 @@ const LiftInfluence = () => {
           </div>
 
           <div className="w-full flex flex-col md:flex-row md:justify-between items-start py-20 mt-10 md:mt-32">
-            <h2 className="text-white text-4xl lg:text-6xl font-clashDisplay font-medium">
-              Overview<span className="text-[#00C2FF]"> ●</span>
-            </h2>
-            <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
-              Embark on a cosmic journey with &apos;Abstract Pulse,&apos; where
-              innovation converges with the cosmic canvas in &apos;Nebula
-              Infusion.&apos; Our meticulous commitment to authenticity shapes
-              every detail, creating a vibrant visual experience in hues of blue
-              and violet. Delving into the project, our deliberate use of square
-              and cube shapes adds a captivating dimension to the visual
-              narrative, establishing a distinct language that echoes
-              throughout.
-            </p>
+            <div className=" w-full">
+              <h2 className="text-white text-4xl lg:text-6xl font-clashDisplay font-medium">
+                Overview<span className="text-[#00C2FF]"> ●</span>
+              </h2>
+            </div>
+            <div className="w-full flex flex-col">
+              <p className=" font-clashGrotesk font-normal text-start w-full text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
+                LiftInfluence is the #1 Saas tool for Instagram growth. It
+                allows you to gain real and targeted followers, fueling your
+                Instagram success. LiftInfluence comes with a lot of features
+                that makes it different from all the tools out there in the
+                market.
+              </p>
+              <p className=" font-clashGrotesk font-normal text-start w-full text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-4">
+                Gain authentics followers not bots to ensure followers are
+                geniune individuals, precise targeting to reach your ideal
+                audience and boosted engagement to lift your Instagram with more
+                likes, comments, and shares. The platform not only attracts
+                followers but also encourages meaningful interactions, giving
+                your content the attention they deserve.
+              </p>
+            </div>
           </div>
 
           <div className="w-full flex flex-col md:flex-row md:justify-between gap-8 md:gap-10 items-start md:py-20 mt-0 md:mt-20">
@@ -108,7 +117,7 @@ const LiftInfluence = () => {
               <Image
                 quality={100}
                 fill
-                src="/gallery/liftinfluence.png"
+                src="/gallery/liftinfluence4.png"
                 alt="LiftInfluence"
                 className=" object-cover object-left md:object-center rounded-3xl"
               />
@@ -120,14 +129,16 @@ const LiftInfluence = () => {
               Challenge<span className="text-[#00C2FF]"> ●</span>
             </h2>
             <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
-              Embark on a cosmic journey with &apos;Abstract Pulse,&apos; where
-              innovation converges with the cosmic canvas in &apos;Nebula
-              Infusion.&apos; Our meticulous commitment to authenticity shapes
-              every detail, creating a vibrant visual experience in hues of blue
-              and violet. Delving into the project, our deliberate use of square
-              and cube shapes adds a captivating dimension to the visual
-              narrative, establishing a distinct language that echoes
-              throughout.
+              Creating LiftInfluence presented several challenges, particularly
+              in the crowded market of Instagram growth tools. One significant
+              hurdle was ensuring that the platform could differentiate itself
+              from competitors by offering genuine follower growth rather than
+              relying on bots. Additionally, developing precise targeting
+              capabilities to reach users who align with clients&apos; target
+              demographics posed a challenge. Moreover, implementing features to
+              boost engagement while maintaining authenticity required
+              innovative strategies to strike the right balance between quantity
+              and quality.
             </p>
           </div>
 
@@ -136,14 +147,16 @@ const LiftInfluence = () => {
               Result<span className="text-[#00C2FF]"> ●</span>
             </h2>
             <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
-              Embark on a cosmic journey with &apos;Abstract Pulse,&apos; where
-              innovation converges with the cosmic canvas in &apos;Nebula
-              Infusion.&apos; Our meticulous commitment to authenticity shapes
-              every detail, creating a vibrant visual experience in hues of blue
-              and violet. Delving into the project, our deliberate use of square
-              and cube shapes adds a captivating dimension to the visual
-              narrative, establishing a distinct language that echoes
-              throughout.
+              Despite the challenges, LiftInfluence emerged as a leader in the
+              SaaS space for Instagram growth. By prioritizing genuine follower
+              acquisition over bots, the platform has cultivated a community of
+              authentic individuals, fostering meaningful interactions and
+              relationships. The precise targeting features have enabled users
+              to effectively reach their ideal audience, driving higher
+              engagement and conversion rates. LiftInfluence&apos;s focus on
+              authenticity and engagement has elevated clients&apos; Instagram
+              presence, garnering more likes, comments, and shares, ultimately
+              fueling their success on the platform.
             </p>
           </div>
 
@@ -199,8 +212,16 @@ const LiftInfluence = () => {
             <span className=" cursor-pointer hover:text-[#00C2FF]">●</span>
           </h2>
           <div className="w-full flex flex-col lg:flex-row gap-10 mt-10 lg:mt-20">
-            <ProjectItem src="/gallery/midas.webp" projectTitle="Midas" />
-            <ProjectItem src="/gallery/pharmx.webp" projectTitle="PharmX" />
+            <ProjectItem
+              link="/work/midas"
+              src="/gallery/midas.webp"
+              projectTitle="Midas"
+            />
+            <ProjectItem
+              link="/work/pharmx"
+              src="/gallery/pharmx.webp"
+              projectTitle="PharmX"
+            />
           </div>
         </Wrapper>
       </div>

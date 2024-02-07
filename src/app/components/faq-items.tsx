@@ -105,24 +105,26 @@ const TABS = ["01"];
 const QUESTIONS = {
   "01": [
     {
-      question: "What is web development?",
+      question: "What technologies and tools do you specialize in?",
       answer:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+        "I specialize in front-end technologies like HTML, CSS, JavaScript, and frameworks like React and Next.js. For back-end, I'm proficient in Node.js, with experience in databases such as MongoDB and MySQL. In design, I use Figma.",
     },
     {
-      question: "How do I know if I need it?",
+      question:
+        "What is your approach to project collaboration and communication?",
       answer:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+        "I believe in open communication throughout the project. Whether working solo or in a team, I prioritize regular updates, feedback sessions, and collaboration tools like email, Slack, or project management platforms such as Trello or Asana.",
     },
     {
-      question: "What does it cost?",
+      question:
+        "Do you offer ongoing support and maintenance for your projects?",
       answer:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+        "Yes, I provide ongoing support and maintenance to ensure projects remain functional, secure, and up-to-date. From bug fixes to feature additions, I offer flexible support plans tailored to client needs, ensuring continued value even post-launch.",
     },
     {
-      question: "What about SEO?",
+      question: "What sets your work apart from other developers/designers?",
       answer:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempora quasi eligendi distinctio, mollitia porro repudiandae modi consectetur consequuntur perferendis!",
+        "My work stands out due to a blend of technical expertise, creativity, and attention to detail. I deliver innovative solutions by staying updated on design and development trends.",
     },
   ],
 };

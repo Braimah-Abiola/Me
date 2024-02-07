@@ -13,13 +13,9 @@ const About = () => {
         </div>
         <div className="flex flex-col w-full md:w-[65%] items-center mt-4">
           <h2 className=" font-clashDisplay font-medium text-white text-4xl md:text-5xl text-center">
-            We know what&apos;s going on.
-            <span className="text-white/25">
-              {" "}
-              You need top-notch design to stand out in the tech world, but
-              hiring in-house designers can be costly and time-consuming.
-            </span>{" "}
-            That&apos;s when Atomic comes in.
+            Having started as a graphic designer and transitioning in to
+            creative developer gives me a unique perspective and understanding
+            in merging both visual aesthetics and modern technology
           </h2>
         </div>
       </Wrapper>

@@ -212,8 +212,16 @@ const Oownee = () => {
             <span className=" cursor-pointer hover:text-[#00C2FF]">●</span>
           </h2>
           <div className="w-full flex flex-col lg:flex-row gap-10 mt-10 lg:mt-20">
-            <ProjectItem src="/gallery/1.png" projectTitle="VOX-AI" />
-            <ProjectItem src="/gallery/2.png" projectTitle="Nova" />
+            <ProjectItem
+              link="/work/vox-ai"
+              src="/gallery/1.png"
+              projectTitle="VOX-AI"
+            />
+            <ProjectItem
+              link="/work/nova"
+              src="/gallery/2.png"
+              projectTitle="Nova"
+            />
           </div>
         </Wrapper>
       </div>

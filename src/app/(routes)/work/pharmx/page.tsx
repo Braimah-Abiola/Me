@@ -50,7 +50,7 @@ const PharmX = () => {
                 SERVICE
               </h4>
               <p className="text-white font-clashGrotesk text-xl md:text-2xl font-medium">
-                Design
+                App Design
               </p>
             </div>
             <div className="flex flex-col gap-2.5 md:gap-4">
@@ -141,13 +141,9 @@ const PharmX = () => {
               Challenge<span className="text-[#00C2FF]"> ●</span>
             </h2>
             <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
-              The challenge was implementing comprehensive security measures for
-              Midas, encompassing encryption, multi-factor authentication,
-              secure communication protocols, data minimization, regular audits,
-              fraud detection, regulatory compliance, backend infrastructure
-              security, employee training, and incident response planning, to
-              safeguard sensitive user data and foster trust, confidence, and
-              loyalty among users.
+              The challenge was creating a visually appealing interface for
+              PharmX app that instills trust and credibility while maintaining a
+              modern look and feel.
             </p>
           </div>
 
@@ -156,10 +152,10 @@ const PharmX = () => {
               Result<span className="text-[#00C2FF]"> ●</span>
             </h2>
             <p className=" font-clashGrotesk font-normal text-start w-full md:w-1/2 text-[#BBBBBB] text-xl md:text-3xl mt-4 md:mt-0">
-              I worked closely with Midas to create a brand identity, UI/UX
-              design, and mobile app that would meet the needs of their target
-              audience. I was committed to delivering exceptional design and
-              development services that help my client succeed.
+              I worked closely with PharmX to create a stunning user experience
+              design, and mobile app that met the needs of doctors and medical
+              students. I was committed to delivering exceptional design
+              services.
             </p>
           </div>
 
@@ -176,15 +172,13 @@ const PharmX = () => {
           <div className="flex flex-col-reverse md:flex-row w-full justify-between items-start md:py-32">
             <div className="w-full md:w-1/2">
               <div className="flex flex-row gap-4 md:gap-6 items-center">
-                <div className="relative h-[70px] w-[70px]">
-                  <Image fill src="/people/niko.png" alt="Niko Valdez" />
-                </div>
+                <div className="relative h-[70px] w-[70px] rounded-full bg-[#00c2ff]"></div>
                 <div className="flex flex-col gap-1">
                   <p className="text-white text-3xl font-clashGrotesk font-normal">
-                    Duke Opoku-Amankwa
+                    Kasim
                   </p>
                   <p className="text-white/60 font-clashGrotesk text-xl">
-                    CEO, Midas Financial Inc.
+                    Owner, PharmX
                   </p>
                 </div>
               </div>
@@ -194,9 +188,9 @@ const PharmX = () => {
                 <Quote />
               </div>
               <h3 className="text-white font-clashDisplay text-5xl md:text-5xl font-medium">
-                A great guy that has some serious design skills! Very
-                straightforward and knows what is he doing. Would highly
-                recommend him!
+                Absolutely amazing guy and probably one of the fastest
+                deliveries I&apos;ve had. Great communication and any feedback
+                that was given was applied until the final product was perfect.
               </h3>
             </div>
           </div>
@@ -215,8 +209,16 @@ const PharmX = () => {
             <span className=" cursor-pointer hover:text-[#00C2FF]">●</span>
           </h2>
           <div className="w-full flex flex-col lg:flex-row gap-10 mt-10 lg:mt-20">
-            <ProjectItem src="/gallery/1.png" projectTitle="VOX-AI" />
-            <ProjectItem src="/gallery/2.png" projectTitle="Nova" />
+            <ProjectItem
+              link="/work/midas"
+              src="/gallery/midas.webp"
+              projectTitle="Midas"
+            />
+            <ProjectItem
+              link="/work/liftinfluence"
+              src="/gallery/liftinfluence_showcase.png"
+              projectTitle="LiftInfluence"
+            />
           </div>
         </Wrapper>
       </div>

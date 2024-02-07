@@ -4,13 +4,19 @@ import Image from "next/image";
 import React, { useState } from "react";
 import SectionTitle from "./section-title";
 import Modal from "./project-modal";
+import Link from "next/link";
 
 interface ProjectItemInterface {
   src: string;
+  link: string;
   projectTitle: string;
 }
 
-const ProjectItem: React.FC<ProjectItemInterface> = ({ src, projectTitle }) => {
+const ProjectItem: React.FC<ProjectItemInterface> = ({
+  src,
+  projectTitle,
+  link,
+}) => {
   const [modal, setModal] = useState({ active: false });
   return (
     <div className="flex flex-col w-full items-start">
@@ -23,13 +29,15 @@ const ProjectItem: React.FC<ProjectItemInterface> = ({ src, projectTitle }) => {
         }}
         className="relative w-full h-[350px] lg:h-[650px] cursor-none"
       >
-        <Image
-          quality={100}
-          className="rounded-[20px] object-cover md:object-top"
-          fill
-          src={src}
-          alt="Pclub.io"
-        />
+        <Link href={link} className=" cursor-none">
+          <Image
+            quality={100}
+            className="rounded-[20px] object-cover md:object-top"
+            fill
+            src={src}
+            alt="Pclub.io"
+          />
+        </Link>
       </div>
       <div className="flex flex-row gap-2.5 md:gap-3 mt-8">
         <SectionTitle text="Development" />
