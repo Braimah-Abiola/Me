@@ -1,14 +1,10 @@
-import type { Metadata } from "next";
 import "../globals.css";
 
-import { clashGrotesk, clashDisplay } from "../lib/customFonts";
-import { cn } from "../lib/utils";
 import Navbar from "../components/nav";
+import { clashDisplay, clashGrotesk } from "../lib/customFonts";
+import { cn, constructMetadata } from "../lib/utils";
 
-export const metadata: Metadata = {
-  title: "Arete - Creative Developer",
-  description: "",
-};
+export const metadata = constructMetadata();
 
 export default function RootLayout({
   children,
