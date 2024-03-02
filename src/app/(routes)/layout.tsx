@@ -3,6 +3,7 @@ import "../globals.css";
 import Navbar from "../components/nav";
 import { clashDisplay, clashGrotesk } from "../lib/customFonts";
 import { cn, constructMetadata } from "../lib/utils";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = constructMetadata();
 
@@ -19,6 +20,7 @@ export default function RootLayout({
           `${clashGrotesk.variable} ${clashDisplay.variable}`
         )}
       >
+        <Analytics />
         <Navbar />
         {children}
       </body>
